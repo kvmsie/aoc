@@ -1,5 +1,9 @@
 import java.io.File
 
-fun readInput(name: String) = File("src\\main\\resources", "$name.txt").readLines()
+private const val PATH = "src\\main\\resources"
 
-fun readInputAsInt(name: String) = File("src\\main\\resources", "$name.txt").readLines().map { it.toInt() }
+fun readInput(name: String) = File(PATH, "$name.txt").readLines()
+
+fun readInputAsInt(name: String) = File(PATH, "$name.txt").readLines().map { it.toInt() }
+
+fun readInts(name: String) = File(PATH, "$name.txt").readLines().first().split(",").map { it.toInt() }
