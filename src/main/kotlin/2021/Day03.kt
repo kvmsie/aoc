@@ -1,3 +1,7 @@
+package `2021`
+
+import readInput
+
 fun main() {
     fun part1(input: List<String>) {
         var gamma = ""
@@ -57,7 +61,7 @@ fun main() {
         println(scrubber * oxygen)
     }
 
-    val input = readInput("Day03")
+    val input = readInput("2021\\Day03")
     part1(input)
     part2(input)
 }

@@ -1,3 +1,7 @@
+package `2021`
+
+import readInput
+
 fun main() {
 
     fun part1(input: List<String>) =
@@ -69,7 +73,7 @@ fun main() {
         println(sum)
     }
 
-    val input = readInput("Day08")
+    val input = readInput("2021\\Day08")
     part1(input)
     part2(input)
 }

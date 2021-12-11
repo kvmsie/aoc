@@ -1,3 +1,7 @@
+package `2021`
+
+import readInput
+
 fun main() {
 
     fun isRowCompleted(board: List<List<Pair<Int, Boolean>>>) =
@@ -115,7 +119,7 @@ fun main() {
 
 
 
-    val input = readInput("Day04")
+    val input = readInput("2021\\Day04")
     part1(input)
     part2(input)
 }

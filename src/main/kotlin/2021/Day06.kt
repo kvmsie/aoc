@@ -1,3 +1,6 @@
+package `2021`
+
+import readInts
 
 fun main() {
 
@@ -27,7 +30,7 @@ fun main() {
         println(sum)
     }
 
-    val input = readInts("Day06")
+    val input = readInts("2021\\Day06")
     part(input, 80)
     part(input, 256)
 

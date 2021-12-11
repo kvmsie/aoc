@@ -1,3 +1,7 @@
+package `2021`
+
+import readInput
+
 fun main() {
 
     data class Point (
@@ -112,7 +116,7 @@ fun main() {
         println(result)
     }
 
-    val input = readInput("Day09")
+    val input = readInput("2021\\Day09")
     part1(input)
     part2(input)
 }

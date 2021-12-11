@@ -1,3 +1,7 @@
+package `2021`
+
+import readInput
+
 fun main() {
     fun part1(input: List<String>) {
         val directions = input.map { it.split(" ") }
@@ -39,7 +43,7 @@ fun main() {
         println("depth: $depth, horizontal: $horizontal, multiply: ${depth * horizontal}")
     }
 
-    val input = readInput("Day02")
+    val input = readInput("2021\\Day02")
     part1(input)
     part2(input)
 }

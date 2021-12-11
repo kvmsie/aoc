@@ -1,3 +1,7 @@
+package `2021`
+
+import readInput
+
 fun main() {
 
     data class Octopus(
@@ -116,7 +120,7 @@ fun main() {
         println(stepCnt)
     }
 
-    val input = readInput("Day11")
+    val input = readInput("2021\\Day11")
     part1(input)
     part2(input)
 }
