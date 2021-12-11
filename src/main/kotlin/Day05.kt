@@ -38,10 +38,14 @@ fun main() {
             val first = row.substringBefore(" -> ")
             val second = row.substringAfter(" -> ")
 
-            Pair(
-                Point(first.substringBefore(",").toInt(), first.substringAfter(",").toInt()),
-                Point(second.substringBefore(",").toInt(), second.substringAfter(",").toInt())
-            )
+            val firstPoint  = Point(first.substringBefore(",").toInt(), first.substringAfter(",").toInt())
+            val secondPoint = Point(second.substringBefore(",").toInt(), second.substringAfter(",").toInt())
+
+            if (firstPoint.x < secondPoint.x) {
+                Pair(firstPoint, secondPoint)
+            } else {
+                Pair(secondPoint, firstPoint)
+            }
         }.forEach {
             if (it.first.x == it.second.x) {
                 for (i in min(it.first.y, it.second.y) .. max(it.first.y, it.second.y)) {
@@ -55,24 +59,12 @@ fun main() {
                 max(it.first.y, it.second.y) - min(it.first.y, it.second.y) == // Diagonal
                 max(it.first.x, it.second.x) - min(it.first.x, it.second.x)
             ) {
-                // fixme sort by x in input.map {}
-                val lower: Point
-                val higher: Point
-
-                if (it.first.x < it.second.x) {
-                    lower = it.first
-                    higher = it.second
-                } else {
-                    lower = it.second
-                    higher = it.first
-                }
-
                 val way =
-                    if (lower.y < higher.y) 1
+                    if (it.first.y < it.second.y) 1
                     else -1
 
-                for (i in 0 .. higher.x - lower.x) {
-                    val key = "${lower.x + i},${lower.y + (i * way)}"
+                for (i in 0 .. it.second.x - it.first.x) {
+                    val key = "${it.first.x + i},${it.first.y + (i * way)}"
                     vents[key] = vents.getOrDefault(key, 0) + 1
                 }
             }
