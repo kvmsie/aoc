@@ -1,6 +1,6 @@
-package `2020`
+package aoc2018
 
-import readInputAsInt
+import readInput
 
 fun main() {
     fun part1(input: List<Int>) {
@@ -18,7 +18,7 @@ fun main() {
 
     }
 
-    val input = readInputAsInt("2020\\Day01")
-    part1(input)
-    part2(input)
+    val input = readInput("test")
+//    part1(input)
+//    part2(input)
 }

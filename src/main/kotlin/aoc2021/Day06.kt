@@ -1,4 +1,4 @@
-package `2021`
+package aoc2021
 
 import readInts
 
@@ -30,7 +30,7 @@ fun main() {
         println(sum)
     }
 
-    val input = readInts("2021\\Day06")
+    val input = readInts("aoc2021/Day06")
     part(input, 80)
     part(input, 256)
 

@@ -1,4 +1,4 @@
-package `2021`
+package aoc2021
 
 import readInput
 
@@ -44,7 +44,7 @@ fun main() {
         println(scores.maxOf { it.value } - scores.minOf { it.value })
     }
 
-    val input = readInput("2021\\Day14")
+    val input = readInput("aoc2021/Day14")
     part(input, 10)
     part(input, 40)
 }

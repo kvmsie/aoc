@@ -1,4 +1,4 @@
-package `2021`
+package aoc2021
 
 import readInput
 
@@ -61,7 +61,7 @@ fun main() {
         println(scrubber * oxygen)
     }
 
-    val input = readInput("2021\\Day03")
+    val input = readInput("aoc2021/Day03")
     part1(input)
     part2(input)
 }

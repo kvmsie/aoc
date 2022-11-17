@@ -1,4 +1,4 @@
-package `2021`
+package aoc2021
 
 import readInput
 
@@ -103,7 +103,7 @@ fun main() {
         println(result.sorted()[result.size / 2])
     }
 
-    val input = readInput("2021\\Day10")
+    val input = readInput("aoc2021/Day10")
     part1(input)
     part2(input)
 }

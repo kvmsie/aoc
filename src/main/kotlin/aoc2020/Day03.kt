@@ -1,4 +1,4 @@
-package `2020`
+package aoc2020
 
 import readInput
 
@@ -39,7 +39,7 @@ fun main() {
         println(cnt)
     }
 
-    val input = readInput("2020\\Day03")
+    val input = readInput("aoc2020/Day03")
     part1(input)
     part2(input)
 }

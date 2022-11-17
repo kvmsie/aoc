@@ -1,4 +1,4 @@
-package `2021`
+package aoc2021
 
 import kotlin.math.abs
 
