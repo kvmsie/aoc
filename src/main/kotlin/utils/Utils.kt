@@ -5,6 +5,9 @@ private const val PATH = "src/main/resources"
 fun readInput(name: String) = File(PATH, "$name.txt")
     .readLines()
 
+fun readInputAsString(name: String) = File(PATH, "$name.txt")
+    .readText()
+
 fun readInputAsInt(name: String) = File(PATH, "$name.txt")
     .readLines()
     .map {
