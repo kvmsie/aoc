@@ -21,3 +21,11 @@ fun readInts(name: String) = File(PATH, "$name.txt")
     .map {
         it.toInt()
     }
+
+fun readInputAs2dInt(name: String) = File(PATH, "$name.txt")
+    .readLines()
+    .map { line ->
+        line.map { char ->
+            char.digitToInt()
+        }.toTypedArray()
+    }.toTypedArray()
