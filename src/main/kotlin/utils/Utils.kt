@@ -8,6 +8,13 @@ fun readInput(name: String) = File(PATH, "$name.txt")
 fun readInputAsString(name: String) = File(PATH, "$name.txt")
     .readText()
 
+fun readInputAsStringLists(name: String) = File(PATH, "$name.txt")
+    .readText()
+    .split("\n\n")
+    .map {
+        it.lines()
+    }
+
 fun readInputAsInt(name: String) = File(PATH, "$name.txt")
     .readLines()
     .map {
